@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background: #066acd;
+    display: flex;
+    justify-content: center;
+    padding-top: 25%;
+    align-items: flex-start;
+}
+
+.container {
+    width: 40%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    min-height: 100px;
+    
+    .newtask {
+        padding: 30px 20px;
+        input  {
+            width: 75%;
+            height: 45px;
+            padding: 12px;
+            color: #111111;
+            font-weight: 500;
+            border-radius: 5px;
+            font-size: 15px;
+            border: 2px solid #d1d3d4;
+            &:focus {
+               outline: none;
+               border-color: #0d75ec;
+           }
+        }
+        button {
+            float: right;
+            font-weight: 500;
+            font-size: 16px;
+            background-color: #0d75ec;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            outline: none;
+            width: 20%;
+            height: 45px;
+            border-radius: 5px;
+        }
+    }
+    .tasks {
+        border-radius: 10px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 30px 20px;
+        margin-top: 10px;
+        .task {
+            border-radius: 5px;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #939697;
+            cursor: pointer;
+            background-color: #c5e1e6;
+            height: 50px;
+            margin-bottom: 8px;
+            padding: 5px 10px;
+            display: flex;
+            span {
+                font-size: 15px;
+                font-weight: 400;
+            }
+            button {
+                background-color: #0d75ec;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                height: 100%;
+                width: 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
